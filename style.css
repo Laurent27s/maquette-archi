@@ -1,0 +1,122 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#logo {}
+
+ul {
+    margin: 0px 0px;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+}
+
+.gras {
+    font-weight: 600;
+}
+
+.fontDark {
+    background-color: rgba(2, 2, 2, 0.5);
+    padding: 5px;
+}
+
+#imgHeader {
+    background-image: url("img/architect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: normal;
+    color: white;
+    /*transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;*/
+    /* section Projets */
+    /*ease-in ease-out ease-in-out*/
+    transition: all 1s ease-out;
+}
+
+h1:hover{
+background-color: royalblue;
+-moz-transform: translate(50px, 0px);
+-webkit-transform: translate(50px, 0px);
+-o-transform: translate(50px, 0px);
+-ms-transform: translate(50px, 0px);
+transform: translate(50px, 0px);
+}
+#imgCards, #archiCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+figure, #archiCards div {
+    margin: 12px 10px;
+    overflow: hidden;
+    width: 23%
+    
+}
+figure img, #archiCards img, #archiCards button {
+    width: 100%;
+}
+@media screen and (min-width:576px){
+    figure,#archiCards div{
+        width: 50%;
+    }
+}
+figcaption, form button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+}
+#archiCards button{
+    background-color: lightgray;
+    font-weight: 600;
+    border: none;
+    padding: 5px 0px;
+}
+h3{
+    font-weight: 500;
+}
+h4{
+font-size: .7rem;
+color: rgb(116,116,116);
+}
+
+/* section formation */ 
+form{
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+padding: 0.1rem;
+margin: .3rem;
+}
+form button{
+margin: .3rem;
+padding: .5rem;
+border: none;
+width: 150px;
+}
+
+figure img:hover{
+    transform: scale(1.3);
+}
+
+figure img{
+    width: 100%;
+    transition: all 4s;
+
+}
